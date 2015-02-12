@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <recognition>
+        <extension>clj</extension>
+        <extension>cljs</extension>
+        <extension>cljx</extension>
+    </recognition>
+    <color>0.400, 0.200, 0.600</color>
+</settings>
