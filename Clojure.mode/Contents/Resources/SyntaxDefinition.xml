@@ -31,7 +31,7 @@
         <string>monitor-enter</string>
         <string>monitor-exit</string>
       </keywords>
-	
+
       <keywords id="Not special forms, but I'd like them highlighted that way" scope="keyword.control" casesensitive="yes" useforautocomplete="yes">
         <string>cond</string>
         <string>condp</string>
@@ -60,7 +60,7 @@
         <string>when-let</string>
         <string>when-not</string>
         <string>when</string>
-				<string>while</string>
+        <string>while</string>
       </keywords>
 
       <keywords id="Number Literals" useforautocomplete="yes" casesensitive="yes" scope="constant.numeric">
@@ -527,8 +527,8 @@
         <string>vec</string>
         <string>vector</string>
         <string>vector?</string>
-        
-				<!-- Moved to the "not special, but I like them" section.
+
+        <!-- Moved to the "not special, but I like them" section.
         <string>when-first</string>
         <string>when-let</string>
         <string>when-not</string>
@@ -573,7 +573,7 @@
           <regex>((?&lt;!\\)(\\\\)*)"</regex>
         </end>
       </state>
-      
+
       <state id="Regular Expression" type="string" scope="string.regex" usespellchecking="no">
         <begin>
           <regex>\#"</regex>
@@ -581,6 +581,12 @@
         <end>
           <regex>((?&lt;!\\)(\\\\)*)"</regex>
         </end>
+      </state>
+
+      <state id="Form" scope="meta.block">
+        <begin><regex>\(</regex><autoend>\)</autoend></begin>
+        <end><regex>\)</regex></end>
+        <import />
       </state>
     </default>
   </states>
