@@ -4,6 +4,7 @@
         <extension>clj</extension>
         <extension>cljs</extension>
         <extension>cljx</extension>
+        <extension>cljc</extension>
     </recognition>
     <color>0.400, 0.200, 0.600</color>
 </settings>
